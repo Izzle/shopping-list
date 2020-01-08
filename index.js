@@ -6,3 +6,38 @@
 // Linking to an externally hosted library (jQuery) and a locally hosted JavaScript file (index.js).
 // Linking to your application JavaScript file from the index.html page.
 // Using this and event delegation
+
+// REQUIREMENTS:
+// In terms of user experience, your shopping list app must allow users to:
+//      -enter items they need to purchase by entering text and hitting "Return" or clicking the "Add item" button
+//      -check and uncheck items on the list by clicking the "Check" button
+//      -permanently remove items from the list
+// 
+// Additionally:
+// -Do not alter index.html or main.css other than adding the links to the external JavaScript inside index.html
+// -Hint: you may find it helpful to read up on and use the following jQuery methods: .submit(), preventDefault(), toggleClass(), and closest().
+
+$(function() {
+
+  // when form is submitted (don't use .click. use .submit)
+  $('#js-shopping-list-form').submit(event => {
+    event.preventDefault();
+    // get text value entered into input element
+    let newItem = $('#shopping-list-entry').val();
+    console.log(newItem);
+    // and append a new list item with that name
+    $('.shopping-list').append(`
+        <li>
+        <span class="shopping-item">${newItem}</span>
+        <div class="shopping-item-controls">
+        <button class="shopping-item-toggle">
+            <span class="button-label">check</span>
+        </button>
+        <button class="shopping-item-delete">
+            <span class="button-label">delete</span>
+        </button>
+        </div>
+    </li>`);
+
+  });
+});
