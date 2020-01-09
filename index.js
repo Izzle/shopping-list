@@ -46,7 +46,7 @@ $(function() {
   // When 'check' button is pressed
   $('.shopping-list').on('click', '.shopping-item-toggle', event => {
     // toggle the class .shopping-item__checked on and off
-    $(event.target).closest('li').toggleClass('shopping-item__checked');
+    $(event.target).closest('div').siblings().toggleClass('shopping-item__checked');
   });
 
   // REMOVE ITEMS
