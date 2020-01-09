@@ -44,11 +44,13 @@ $(function() {
 
   // CHECK AND UNCHECK ITEMS
   // When 'check' button is pressed
-  // toggle the class .shopping-item__checked on and off
-  // to add or remove a line through
   $('.shopping-list').on('click', '.shopping-item-toggle', event => {
+    // toggle the class .shopping-item__checked on and off
     $(event.target).closest('li').toggleClass('shopping-item__checked');
   });
 
   // REMOVE ITEMS
+  $('.shopping-list').on('click', '.shopping-item-delete', event => {
+    $(event.target).closest('li').remove();
+  });
 });
