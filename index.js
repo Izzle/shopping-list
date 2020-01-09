@@ -25,7 +25,7 @@ $(function() {
     event.preventDefault();
     // get text value entered into input element
     let newItem = $('#shopping-list-entry').val();
-    console.log(newItem);
+
     // and append a new list item with that name
     $('.shopping-list').append(`
         <li>
@@ -39,6 +39,9 @@ $(function() {
         </button>
         </div>
     </li>`);
+    
+    // This will clear your entered value from the input box after you Enter
+    $('#shopping-list-entry').val('');
 
   });
 
