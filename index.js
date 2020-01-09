@@ -19,8 +19,9 @@
 
 $(function() {
 
+  // ADD ITEMS
   // when form is submitted (don't use .click. use .submit)
-  $('#js-shopping-list-form').submit(event => {
+  $('#js-shopping-list-form').submit(event => { 
     event.preventDefault();
     // get text value entered into input element
     let newItem = $('#shopping-list-entry').val();
@@ -40,4 +41,14 @@ $(function() {
     </li>`);
 
   });
+
+  // CHECK AND UNCHECK ITEMS
+  // When 'check' button is pressed
+  // toggle the class .shopping-item__checked on and off
+  // to add or remove a line through
+  $('.shopping-list').on('click', '.shopping-item-toggle', event => {
+    $(event.target).closest('li').toggleClass('shopping-item__checked');
+  });
+
+  // REMOVE ITEMS
 });
