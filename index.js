@@ -2,19 +2,19 @@
 // from shopping list
 
 // To Complete this challenge:
-// Using DOM manipulation and traversal to dynamically add and remove HTML elements and apply styles.
-// Linking to an externally hosted library (jQuery) and a locally hosted JavaScript file (index.js).
-// Linking to your application JavaScript file from the index.html page.
-// Using this and event delegation
+// Using DOM manipulation and traversal to dynamically add and remove HTML elements and apply styles. ✓
+// Linking to an externally hosted library (jQuery) and a locally hosted JavaScript file (index.js).  ✓
+// Linking to your application JavaScript file from the index.html page.                              ✓
+// Using this and event delegation                                                                    ✓
 
 // REQUIREMENTS:
 // In terms of user experience, your shopping list app must allow users to:
-//      -enter items they need to purchase by entering text and hitting "Return" or clicking the "Add item" button
-//      -check and uncheck items on the list by clicking the "Check" button
-//      -permanently remove items from the list
+//      -enter items they need to purchase by entering text and hitting "Return" or clicking the "Add item" button ✓
+//      -check and uncheck items on the list by clicking the "Check" button                                        ✓
+//      -permanently remove items from the list                                                                    ✓
 // 
 // Additionally:
-// -Do not alter index.html or main.css other than adding the links to the external JavaScript inside index.html
+// -Do not alter index.html or main.css other than adding the links to the external JavaScript inside index.html      ✓
 // -Hint: you may find it helpful to read up on and use the following jQuery methods: .submit(), preventDefault(), toggleClass(), and closest().
 
 $(function() {
