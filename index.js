@@ -1,3 +1,4 @@
+'use strict';
 // Create an app that allows users to add, check, uncheck, and remove items
 // from shopping list
 
